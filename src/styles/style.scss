@@ -13,18 +13,10 @@
 body {
     max-width: 1400px; /* Максимальная ширина страницы в пикселах */
     margin: auto;
+    background-color: #F5F5F5;
     
 }
 
-.header {
-	max-height: 113px;
-	max-width: 736px;
-	font-size: 42px;
-	font-weight: bold;
-	font-family: Lato-BoldItalic;
-	margin: 76px 0 0 224px;
-	
-}
 .tile {
 	margin: 74px 0 0 224px;
 	width: 952px;
@@ -50,7 +42,7 @@ body {
 
 }
 
-.fname-input {
+.fname-form__input {
 	padding-left: 31px;
 	font-size: 20px;
 	border-width: 0px;
@@ -60,7 +52,7 @@ body {
 	outline: none;
 }
 
-.fname-input:focus {
+.fname-form__input:focus {
 	border: 2px solid #5b6bbf;
 }
 
@@ -79,7 +71,7 @@ body {
 
 }
 
-.lname-input {
+.lname-form__input {
 	padding-left: 31px;
 	font-size: 20px;
 	border-width: 0px;
@@ -89,7 +81,7 @@ body {
 	outline: none;
 }
 
-.lname-input:focus {
+.lname-form__input:focus {
 	border: 2px solid #5b6bbf;
 }
 
@@ -102,7 +94,7 @@ body {
 
 }
 
-.email-input {
+.email-form__input {
 	padding-left: 31px;
 	font-size: 20px;
 	border-width: 0px;
@@ -112,7 +104,7 @@ body {
 	outline: none;
 }
 
-.email-input:focus {
+.email-form__input:focus {
 	border: 2px solid #5b6bbf;
 }
 
@@ -125,7 +117,7 @@ body {
 
 }
 
-.phone-input {
+.phone-form__input {
 	color: #bcbdbf;
 	padding-left: 31px;
 	font-size: 20px;
@@ -136,7 +128,7 @@ body {
 	outline: none;
 }
 
-.phone-input:focus {
+.phone-form__input:focus {
 	border: 2px solid #5b6bbf;
 }
 
@@ -149,7 +141,7 @@ body {
 
 }
 
-.dob-input {
+.dob-form__input {
 	padding-left: 31px;
 	font-size: 20px;
 	border: 2px solid white;
@@ -162,7 +154,7 @@ body {
 	background-position: center right 17px;
 }
 
-.dob-input:focus {
+.dob-form__input:focus {
 	border: 2px solid #5b6bbf;
 }
 
@@ -174,23 +166,23 @@ body {
 	margin-top: 29px;
 }
 
-.sex-input {
+.sex-form__input {
 	padding-left: 31px;
 	margin-top: 20px;
     display: none;
 }
 
 
-.sex-input + label {
-        background: url("../images/radio-unchecked.png") no-repeat scroll 0 0;
-        background-position: center left;
-        cursor: pointer;
-        padding-left: 25px;
+.sex-form__input + label {
+    background: url("../images/radio-unchecked.png") no-repeat scroll 0 0;
+    background-position: center left;
+    cursor: pointer;
+    padding-left: 25px;
 }
 
-.sex-input:checked + label {
-        background: url("../images/radio-checked.png") no-repeat scroll 0 0;
-        background-position: center left;
+.sex-form__input:checked + label {
+    background: url("../images/radio-checked.png") no-repeat scroll 0 0;
+    background-position: center left;
 }
 
 .sex-form_text {
@@ -203,37 +195,22 @@ body {
 	margin-top: 60px;
 }
 
-.button-submit_text {
+.button-submit__text {
 	font-size: 24px;
 	color: rgb(92,107,192);
 	font-family: "Lato-Bold";
 	font-weight: bold;
 }
 
-.button-submit_button {
+.button-submit__button {
 	border: 1px solid white;
 	background-color: white;
 }
 
-.button-submit_button:hover {
+.button-submit__button:hover {
 	border: 1px solid rgba(238,238,238,0.8);
 }
 
-.button-submit_button:focus {
+.button-submit__button:focus {
 	border: 1px solid rgba(92,107,192,0.8);
-}
-footer {
-	margin-top: 105px;
-	width: 1400px;
-	height: 160px;
-	background-color: #5b6bbf;
-}
-
-.footer__Palo-Alto {
-	margin-left: 633px;
-	padding-top: 65px;
-	font-family: Lato-BoldItalic;
-	font-size: 36px;
-	color: rgba(0,0,0,0.2)
-
 }
