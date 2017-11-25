@@ -2,7 +2,7 @@
 
 {% block main %}
 		<main class="tile">
-			<form>
+			<form id="input-form">
 				<p class="profile-text">Profile</p>
 				<section class="fname-form">
 					<label for="fname">First Name</label><br>
@@ -43,7 +43,7 @@
 				</section>
 				<section class="button-submit">
 					<div>
-						<button id="submit" type="submit" name="submit" class="button-submit__button"><span class="button-submit__text">SUBMIT</span></button>
+						<button id="submit" type="submit" name="submit" class="button-submit__button" form="input-form"><span class="button-submit__text">SUBMIT</span></button>
 					</div>
 				</section>
 			</form>

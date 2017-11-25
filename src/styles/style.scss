@@ -17,6 +17,8 @@ body {
     
 }
 
+$border-color: #5b6bbf;
+
 .tile {
 	margin: 74px 0 0 224px;
 	width: 952px;
@@ -53,7 +55,7 @@ body {
 }
 
 .fname-form__input:focus {
-	border: 2px solid #5b6bbf;
+	border: 2px solid border-color;
 }
 
 .square-1 {
@@ -82,7 +84,7 @@ body {
 }
 
 .lname-form__input:focus {
-	border: 2px solid #5b6bbf;
+	border: 2px solid border-color;
 }
 
 .email-form {
@@ -105,7 +107,7 @@ body {
 }
 
 .email-form__input:focus {
-	border: 2px solid #5b6bbf;
+	border: 2px solid border-color;
 }
 
 .phone-form {
@@ -129,7 +131,7 @@ body {
 }
 
 .phone-form__input:focus {
-	border: 2px solid #5b6bbf;
+	border: 2px solid border-color;
 }
 
 .dob-form {
@@ -155,7 +157,7 @@ body {
 }
 
 .dob-form__input:focus {
-	border: 2px solid #5b6bbf;
+	border: 2px solid border-color;
 }
 
 .sex-form {
