@@ -2,50 +2,52 @@
 
 {% block main %}
 		<main class="tile">
-			<form id="input-form">
-				<p class="profile-text">Profile</p>
-				<section class="fname-form">
-					<label for="fname">First Name</label><br>
-					<div class="square-1">
-						<input id ="fname" type="text" name="fname" class="fname-form__input">
+			<h2 class="profile-text">Profile</h2>
+			<form id="registration-form" class="registration-form">
+				<section class="registration-form__fname">
+					<label for="fname">First Name</label>
+					<div class="background-square">
+						<input id ="fname" type="text" name="fname" class="registration-form__fname_input registration-form__text-input">
 					</div>
 				</section>
-				<section class="lname-form">
-					<label for="lname">Last Name</label><br>
-					<div class="square-1">
-						<input id ="lname" type="text" name="lname" class="lname-form__input">
+				<section class="registration-form__lname">
+					<label for="lname">Last Name</label>
+					<div class="background-square">
+						<input id ="lname" type="text" name="lname" class="registration-form__lname_input registration-form__text-input">
 					</div>
 				</section>
-				<section class="email-form">
-					<label for="email">E-mail</label><br>
-					<div class="square-1">
-						<input id ="email" type="text" name="email" class="email-form__input">
+				<section class="registration-form__email">
+					<label for="email">E-mail</label>
+					<div class="background-square">
+						<input id ="email" type="text" name="email" class="registration-form__email_input registration-form__text-input">
 					</div>
 				</section>
-				<section class="phone-form">
-					<label for="phone">Phone</label><br>
-					<div class="square-1">
-						<input id ="phone" type="text" name="phone" class="phone-form__input" placeholder="+_(___)___-__-__">
+				<section class="registration-form__phone">
+					<label for="phone">Phone</label>
+					<div class="background-square">
+						<input id ="phone" type="text" name="phone" class="registration-form__phone_input registration-form__text-input" placeholder="+_(___)___-__-__">
 					</div>
 				</section>
-				<section class="dob-form">
-					<label for="dob">Date of Birth</label><br>
-					<div class="square-1">
-						<input id ="dob" type="text" name="dob" class="dob-form__input" placeholder="DD/MM/YYYY">
+				<section class="registration-form__dob">
+					<label for="dob">Date of Birth</label>
+					<div class="background-square">
+						<input id ="dob" type="text" name="dob" class="registration-form__dob_input registration-form__text-input" placeholder="DD/MM/YYYY">
 					</div>
 				</section>
-				<section class="sex-form">
-					<label>Sex</label><br>
+				<section class="registration-form__sex">
+					<label>Sex</label>
 					<div>
-						<input id ="male" type="radio" name="sex" value="male" class="sex-form__input"><label for="male" class="sex-form_text">Male</label><br>
-						<input id ="female" type="radio" name="sex" value="female" class="sex-form__input"><label for="female" class="sex-form_text">Female</label>
+						<input id ="male" type="radio" name="sex" value="male" class="registration-form__sex_input"><label for="male" class="registration-form__sex_label">Male</label><br>
+						<input id ="female" type="radio" name="sex" value="female" class="registration-form__sex_input"><label for="female" class="registration-form__sex_label">Female</label>
 					</div>
 				</section>
-				<section class="button-submit">
-					<div>
-						<button id="submit" type="submit" name="submit" class="button-submit__button" form="input-form"><span class="button-submit__text">SUBMIT</span></button>
-					</div>
-				</section>
+			</form>
+			<form>
+			<section>
+				<div>
+					<button id="submit" type="submit" name="submit" class="button-submit" form="registration-form"><span class="button-submit__text">SUBMIT</span></button>
+				</div>
+			</section>
 			</form>
 		</main>
 {% endblock %}

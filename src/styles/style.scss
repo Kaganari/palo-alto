@@ -11,7 +11,6 @@
     src: url(../fonts/Lato-Regular.ttf); /* Путь к файлу со шрифтом */
  }
 body {
-    max-width: 1400px; /* Максимальная ширина страницы в пикселах */
     margin: auto;
     background-color: #F5F5F5;
     
@@ -41,161 +40,70 @@ $border-color: #5b6bbf;
 	color: rgb(0,0,0);
 	font-family: "Lato-Regular";
 	margin-left: 294px;
-
 }
 
-.fname-form__input {
-	padding-left: 31px;
-	font-size: 20px;
-	border-width: 0px;
-	width: 364px;
-	height: 56px;
-	background-color: #f7f9fb;
-	outline: none;
-}
-
-.fname-form__input:focus {
-	border: 2px solid border-color;
-}
-
-.square-1 {
-	margin-top: 12px;
-	width: 364px;
-	height: 56px;
-	background-color: #f7f9fb;
-}
-.lname-form {
+.registration-form {
 	font-size: 20px;
 	color: rgb(0,0,0);
 	font-family: "Lato-Regular";
 	margin-left: 294px;
-	margin-top: 29px;
 
+	&__text-input {
+		padding-left: 31px;
+		font-size: 20px;
+		border: 2px solid white;
+		width: 364px;
+		height: 56px;
+		background-color: #f7f9fb;
+		outline: none;
+	}
+
+	&__text-input:focus {
+		border: 2px solid $border-color;
+	}
+	&__lname {
+		margin-top: 29px;
+	}
+
+	&__email {
+		margin-top: 29px;
+	}
+
+	&__phone {
+		margin-top: 29px;
+	}
+
+	&__dob {
+		margin-top: 29px;
+		&_input {
+			background-image: url(../images/dob_icon.png);
+			background-repeat: no-repeat;
+			background-position: center right 17px;
+		}
+	}
+
+	&__sex {
+		margin-top: 29px;
+		&_input {
+			padding-left: 31px;
+			margin-top: 20px;
+    		display: none;
+		}
+		&_input + label {
+			background: url("../images/radio-unchecked.png") no-repeat scroll 0 0;
+    		background-position: center left;
+    		padding-left: 25px;
+		}
+		&_input:checked + label {
+			background: url("../images/radio-checked.png") no-repeat scroll 0 0;
+    		background-position: center left;
+		}
+		&_label {
+			margin-left: 6px;
+		}
+	}
 }
 
-.lname-form__input {
-	padding-left: 31px;
-	font-size: 20px;
-	border-width: 0px;
-	width: 364px;
-	height: 56px;
-	background-color: #f7f9fb;
-	outline: none;
-}
-
-.lname-form__input:focus {
-	border: 2px solid border-color;
-}
-
-.email-form {
-	font-size: 20px;
-	color: rgb(0,0,0);
-	font-family: "Lato-Regular";
-	margin-left: 294px;
-	margin-top: 29px;
-
-}
-
-.email-form__input {
-	padding-left: 31px;
-	font-size: 20px;
-	border-width: 0px;
-	width: 364px;
-	height: 56px;
-	background-color: #f7f9fb;
-	outline: none;
-}
-
-.email-form__input:focus {
-	border: 2px solid border-color;
-}
-
-.phone-form {
-	font-size: 20px;
-	color: rgb(0,0,0);
-	font-family: "Lato-Regular";
-	margin-left: 294px;
-	margin-top: 29px;
-
-}
-
-.phone-form__input {
-	color: #bcbdbf;
-	padding-left: 31px;
-	font-size: 20px;
-	border: 2px solid white;
-	width: 364px;
-	height: 56px;
-	background-color: #f7f9fb;
-	outline: none;
-}
-
-.phone-form__input:focus {
-	border: 2px solid border-color;
-}
-
-.dob-form {
-	font-size: 20px;
-	color: rgb(0,0,0);
-	font-family: "Lato-Regular";
-	margin-left: 294px;
-	margin-top: 29px;
-
-}
-
-.dob-form__input {
-	padding-left: 31px;
-	font-size: 20px;
-	border: 2px solid white;
-	width: 364px;
-	height: 56px;
-	background-color: #f7f9fb;
-	outline: none;
-	background-image: url(../images/dob_icon.png);
-	background-repeat: no-repeat;
-	background-position: center right 17px;
-}
-
-.dob-form__input:focus {
-	border: 2px solid border-color;
-}
-
-.sex-form {
-	font-size: 20px;
-	color: rgb(0,0,0);
-	font-family: "Lato-Regular";
-	margin-left: 294px;
-	margin-top: 29px;
-}
-
-.sex-form__input {
-	padding-left: 31px;
-	margin-top: 20px;
-    display: none;
-}
-
-
-.sex-form__input + label {
-    background: url("../images/radio-unchecked.png") no-repeat scroll 0 0;
-    background-position: center left;
-    cursor: pointer;
-    padding-left: 25px;
-}
-
-.sex-form__input:checked + label {
-    background: url("../images/radio-checked.png") no-repeat scroll 0 0;
-    background-position: center left;
-}
-
-.sex-form_text {
-	margin-left: 6px;
-}
-
-
-.button-submit {
-	margin-left: 330px;
-	margin-top: 60px;
-}
 
 .button-submit__text {
 	font-size: 24px;
@@ -204,15 +112,18 @@ $border-color: #5b6bbf;
 	font-weight: bold;
 }
 
-.button-submit__button {
+.button-submit {
 	border: 1px solid white;
 	background-color: white;
+
+	margin-left: 330px;
+	margin-top: 60px;
 }
 
-.button-submit__button:hover {
+.button-submit:hover {
 	border: 1px solid rgba(238,238,238,0.8);
 }
 
-.button-submit__button:focus {
+.button-submit:focus {
 	border: 1px solid rgba(92,107,192,0.8);
 }
