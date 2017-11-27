@@ -25,21 +25,13 @@ $border-color: #5b6bbf;
 	box-shadow: 0 0 25px rgba(0,0,0,0.1);
 	background-color: #ffffff;
 	border: 1px;
-}
-
-.profile-text {
-	padding: 80px 0 0 98px;
-	font-size: 40px;
-	color: rgb(51,51,51);
-	font-family: "Lato-Bold";
-	font-weight: bold;
-}
-
-.fname-form {
-	font-size: 20px;
-	color: rgb(0,0,0);
-	font-family: "Lato-Regular";
-	margin-left: 294px;
+	&__title {
+		padding: 80px 0 0 98px;
+		font-size: 40px;
+		color: rgb(51,51,51);
+		font-family: "Lato-Bold";
+		font-weight: bold;
+	}
 }
 
 .registration-form {
@@ -104,9 +96,8 @@ $border-color: #5b6bbf;
 	}
 }
 
-
 .button-submit__text {
-	font-size: 24px;
+	font-size: 21px;
 	color: rgb(92,107,192);
 	font-family: "Lato-Bold";
 	font-weight: bold;
@@ -121,9 +112,11 @@ $border-color: #5b6bbf;
 }
 
 .button-submit:hover {
+	background-color: rgba(46,151,222,0);
 	border: 1px solid rgba(238,238,238,0.8);
 }
 
 .button-submit:focus {
+	background-color: rgba(46,151,222,0);
 	border: 1px solid rgba(92,107,192,0.8);
 }
