@@ -1,0 +1,54 @@
+{{#> layout/base }}
+
+{{#*inline "main-block"}}
+        <main class="tile">
+            <h2 class="tile__title">Profile</h2>
+            <div class="divider"></div>
+            <form id="profile-form" class="profile-form">
+                <div class="profile-form__fname">
+                    <label for="fname">First Name</label>
+                    <div class="background-square">
+                        <input id ="fname" type="text" name="fname" class="profile-form__fname_input profile-form__text-input">
+                    </div>
+                </div>
+                <div class="profile-form__lname">
+                    <label for="lname">Last Name</label>
+                    <div class="background-square">
+                        <input id ="lname" type="text" name="lname" class="profile-form__lname_input profile-form__text-input">
+                    </div>
+                </div>
+                <div class="profile-form__email">
+                    <label for="email">E-mail</label>
+                    <div class="background-square">
+                        <input id ="email" type="text" name="email" class="profile-form__email_input profile-form__text-input">
+                    </div>
+                </div>
+                <div class="profile-form__phone">
+                    <label for="phone">Phone</label>
+                    <div class="background-square">
+                        <input id ="phone" type="text" name="phone" class="profile-form__phone_input profile-form__text-input" placeholder="+_(___)___-__-__">
+                    </div>
+                </div>
+                <div class="profile-form__dob">
+                    <label for="dob">Date of Birth</label>
+                    <div class="background-square">
+                        <input id ="dob" type="text" name="dob" class="profile-form__dob_input profile-form__text-input" placeholder="DD/MM/YYYY">
+                    </div>
+                </div>
+                <div class="profile-form__sex">
+                    <label>Sex</label>
+                    <div>
+                        <input id ="male" type="radio" name="sex" value="male" class="profile-form__sex_input"><label for="male" class="profile-form__sex_label">Male</label><br>
+                        <input id ="female" type="radio" name="sex" value="female" class="profile-form__sex_input"><label for="female" class="profile-form__sex_label">Female</label>
+                    </div>
+                </div>
+            </form>
+            <form>
+                <div class="button-submit__container">
+                    <button id="submit" type="submit" name="submit" class="button-submit" form="profile-form"><span class="button-submit__text">SUBMIT</span></button>
+                </div>
+            </form>
+        </main>
+{{/inline}}
+
+{{/layout/base}}

@@ -1,0 +1,14 @@
+@import "vendors/normalize";
+@import "styles/fonts";
+
+/*Layout */
+
+@import "partials/layout/style";
+
+@import "pages/profile-form/style";
+@import "pages/home/style";
+
+@import "partials/includes/header/style";
+@import "partials/includes/footer/style";
+
+@import "styles/some-styles";

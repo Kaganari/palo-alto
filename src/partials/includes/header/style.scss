@@ -1,0 +1,61 @@
+.header {
+    margin: 77px auto 80px;
+    &__logo-container {
+        display: inline-block;
+        &_logo {
+            max-height: 113px;
+            max-width: 736px;
+            font-size: 42px;
+            font-weight: bold;
+            font-family: Lato-BoldItalic;
+            padding-left:224px;
+        }
+    }
+
+    &__menu {
+        display: inline-block;
+        margin-left: 599px;
+
+        &_home {
+            font-size: 16px;
+            color: rgb(189,189,189);
+            font-family: "Lato-Bold";
+            font-weight: bold;
+            text-align: right;
+            
+            &:link {
+            color: #333333;
+            text-decoration: none;
+            }
+            &:visited {
+            color: #333333;
+            }
+        }
+        &_profile {
+            font-size: 16px;
+            font-family: "Lato-Bold";
+            font-weight: bold;
+            text-align: right;
+            padding-left: 17px;
+
+            &:link {
+            color: #333333;
+            text-decoration: none;
+            }
+            &:visited {
+                color: #333333;
+            }
+        }
+        &_search {
+            background-image: url("./images/search.png");
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
+
+            padding-left: 17px;
+            background-repeat: no-repeat;
+            background-position: center right 17px;
+        }
+    }
+
+}

@@ -1,0 +1,113 @@
+$border-color: #5b6bbf;
+
+.divider {
+    background-color: #eee;
+    height: 2px;
+    width: 757px;
+    margin: 42px 0 42px 98px;
+}
+
+.tile {
+    margin-left: 224px;
+    width: 954px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    border: 1px;
+    &__title {
+        padding: 80px 0 0 98px;
+        font-size: 40px;
+        color: rgb(51,51,51);
+        font-family: "Lato-Bold";
+        font-weight: bold;
+        max-width: 730px;
+    }
+}
+
+.profile-form {
+    font-size: 20px;
+    color: rgb(0,0,0);
+    font-family: "Lato-Regular";
+    margin-left: 294px;
+
+    &__text-input {
+        padding-left: 31px;
+        font-size: 20px;
+        border: 2px solid white;
+        width: 364px;
+        height: 56px;
+        background-color: #f7f9fb;
+        outline: none;
+    }
+
+    &__text-input:focus {
+        border: 2px solid $border-color;
+    }
+    &__lname {
+        margin-top: 29px;
+    }
+
+    &__email {
+        margin-top: 29px;
+    }
+
+    &__phone {
+        margin-top: 29px;
+    }
+
+    &__dob {
+        margin-top: 29px;
+        &_input {
+            background-image: url(./images/dob_icon.png);
+            background-repeat: no-repeat;
+            background-position: center right 17px;
+        }
+    }
+
+    &__sex {
+        margin-top: 29px;
+        &_input {
+            padding-left: 31px;
+            margin-top: 20px;
+            display: none;
+        }
+        &_input + label {
+            background: url("./images/radio-unchecked.png") no-repeat scroll 0 0;
+            background-position: center left;
+            padding-left: 25px;
+        }
+        &_input:checked + label {
+            background: url("./images/radio-checked.png") no-repeat scroll 0 0;
+            background-position: center left;
+        }
+        &_label {
+            margin-left: 6px;
+        }
+    }
+}
+
+
+.button-submit {
+    border: 1px solid white;
+    background-color: white;
+    margin-left: 330px;
+    margin-top: 60px;
+    &__text {
+        font-size: 21px;
+        color: rgb(92,107,192);
+        font-family: "Lato-Bold";
+        font-weight: bold;
+    }
+    &__container {
+        padding-bottom: 85px;
+    }
+}
+
+.button-submit:hover {
+    background-color: rgba(46,151,222,0);
+    border: 1px solid rgba(238,238,238,0.8);
+}
+
+.button-submit:focus {
+    background-color: rgba(46,151,222,0);
+    border: 1px solid rgba(92,107,192,0.8);
+}
