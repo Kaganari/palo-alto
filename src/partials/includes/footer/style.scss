@@ -1,7 +1,99 @@
-footer {
+$footer__menu_color: white;
+
+.footer {
     margin-top: 105px;
-    height: 160px;
     background-color: #5b6bbf;
+
+    &__copyright {
+        margin-top: 68px;
+        margin-left: 456px;
+        font-size: 14px;
+        font-family: "Lato-Bold";
+        color: rgba(255,255,255, 0.3);
+        &_developers {
+            color: $footer__menu_color;
+        }
+
+    }
+
+    &__menu {
+        display: inline-block;
+        margin-top:  62px;
+        margin-left: 39.2%;
+
+        &_home {
+            font-size: 17px;
+            color: rgb(189,189,189);
+            font-family: "Lato-Bold";
+            text-align: right;
+            
+            &:link {
+            color: $footer__menu_color;
+            text-decoration: none;
+            }
+            &:visited {
+            color: $footer__menu_color;
+            }
+        }
+        &_profile {
+            font-size: 16px;
+            font-family: "Lato-Bold";
+            text-align: right;
+            padding-left: 42px;
+
+            &:link {
+            color: $footer__menu_color;
+            text-decoration: none;
+            }
+            &:visited {
+                color: $footer__menu_color;
+            }
+        }
+        &_search {
+            padding-left: 42px;
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
+        }
+    }
+    &__social {
+        margin-left: 616px;
+        margin-top: 37px;
+        padding-bottom: 70px;
+    }
+    &__icon {
+        &_facebook {
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            background-image: url("images/social.png");
+            background-position: 0 0;
+        }
+        &_twitter {
+            margin-left: 26px;
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            background-image: url("images/social.png");
+            background-position: -22px 0;
+        }
+        &_instagram {
+            margin-left: 26px;
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            background-image: url("images/social.png");
+            background-position: -44px 0;
+        }
+        &_pinterest {
+            margin-left: 26px;
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            background-image: url("images/social.png");
+            background-position: -66px 0;
+        }
+    }
 }
 
 .footer__Palo-Alto {
@@ -11,4 +103,27 @@ footer {
     font-size: 36px;
     color: rgba(0,0,0,0.2)
 
+}
+
+@media only screen and (min-device-pixel-ratio: 1.5) {
+    .footer {
+        &__icon {
+            &_facebook {
+                background-image: url("images/social@2x.png");
+                background-position: 0 0;
+            }
+            &_twitter {
+                background-image: url("images/social@2x.png");
+                background-position: -44px 0;
+            }
+            &_instagram {
+                background-image: url("images/social@2x.png");
+                background-position: -88px 0;
+            }
+            &_pinterest {
+                background-image: url("images/social@2x.png");
+                background-position: -132px 0;
+            }
+        }
+    }
 }

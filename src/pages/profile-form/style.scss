@@ -9,6 +9,7 @@ $border-color: #5b6bbf;
 
 .tile {
     margin-left: 224px;
+    margin-bottom: 50px;
     width: 954px;
     box-shadow: 0 0 25px rgba(0,0,0,0.1);
     background-color: #ffffff;
@@ -20,6 +21,7 @@ $border-color: #5b6bbf;
         font-family: "Lato-Bold";
         font-weight: bold;
         max-width: 730px;
+        margin-top: 0;
     }
 }
 
@@ -92,7 +94,7 @@ $border-color: #5b6bbf;
     margin-left: 330px;
     margin-top: 60px;
     &__text {
-        font-size: 21px;
+        font-size: 24px;
         color: rgb(92,107,192);
         font-family: "Lato-Bold";
         font-weight: bold;

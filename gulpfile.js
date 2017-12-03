@@ -63,7 +63,7 @@ gulp.task('images', function(){
   .pipe(gulp.dest(path.dist.images));
 });
 
-gulp.task('build', ['html', 'css', 'fonts', 'icons', 'images']);
+gulp.task('build', ['html', 'css', 'fonts', 'images']);
 
 gulp.task('watch', function () {
   gulp.watch(path.watch.css, ['css']);
