@@ -10,7 +10,7 @@ $border-color: #5b6bbf;
 .tile {
     margin-left: 224px;
     margin-bottom: 50px;
-    width: 954px;
+    width: 952px;
     box-shadow: 0 0 25px rgba(0,0,0,0.1);
     background-color: #ffffff;
     border: 1px;
@@ -112,4 +112,18 @@ $border-color: #5b6bbf;
 .button-submit:focus {
     background-color: rgba(46,151,222,0);
     border: 1px solid rgba(92,107,192,0.8);
+}
+
+
+@media only screen and (min-device-pixel-ratio: 1.5) {
+    .profile-form {
+        &__sex {
+            &_input + label {
+                background: url("./images/radio-unchecked@2x.png") no-repeat scroll 0 0;
+            }
+            &_input:checked + label {
+                background: url("./images/radio-checked@2x.png") no-repeat scroll 0 0;
+            }
+        }
+    }
 }
