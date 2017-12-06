@@ -14,8 +14,8 @@ var path = {
         partials: './src/partials/'
     },
     fonts: 'src/fonts/*.ttf',
-    icons: 'src/icons/**/*.+(png|jpg)',
-    images: 'src/images/**/*.+(png|jpg)',
+    icons: 'src/icons/**/*.+(png|jpg|ico)',
+    images: 'src/images/**/*.+(png|jpg|ico)',
     dist: {
       css:  'dist/',
       html: 'dist/',
@@ -24,7 +24,8 @@ var path = {
     },
     watch: {
         css: './src/**/*.scss',
-        html: './src/**/*.hbs'
+        html: './src/**/*.hbs',
+        dist: 'dist/*.css'
     }
 };
 

@@ -4,18 +4,20 @@ $border-color: #5b6bbf;
     background-color: #eee;
     height: 2px;
     width: 757px;
-    margin: 42px 0 42px 98px;
+    margin: 42px 0 42px 0;
 }
 
 .tile {
+    box-sizing: border-box;
     margin-left: 224px;
     margin-bottom: 50px;
     width: 952px;
     box-shadow: 0 0 25px rgba(0,0,0,0.1);
     background-color: #ffffff;
     border: 1px;
+    padding: 80px 0 80px 98px;
     &__title {
-        padding: 80px 0 0 98px;
+        
         font-size: 40px;
         color: rgb(51,51,51);
         font-family: "Lato-Bold";
@@ -23,13 +25,18 @@ $border-color: #5b6bbf;
         max-width: 730px;
         margin-top: 0;
     }
+    &__image {
+        margin-left: -98px;
+        margin-top: -80px;
+        margin-bottom: 80px;
+    }
 }
 
 .profile-form {
     font-size: 20px;
     color: rgb(0,0,0);
     font-family: "Lato-Regular";
-    margin-left: 294px;
+    margin-left: 196px;
 
     &__text-input {
         padding-left: 31px;
@@ -91,7 +98,7 @@ $border-color: #5b6bbf;
 .button-submit {
     border: 1px solid white;
     background-color: white;
-    margin-left: 330px;
+    margin-left: 232px;
     margin-top: 60px;
     &__text {
         font-size: 24px;
@@ -100,7 +107,6 @@ $border-color: #5b6bbf;
         font-weight: bold;
     }
     &__container {
-        padding-bottom: 85px;
     }
 }
 
