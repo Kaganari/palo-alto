@@ -1,4 +1,5 @@
 $border-color: #5b6bbf;
+$top-margin: 15px;
 
 .divider {
     background-color: #eee;
@@ -35,6 +36,7 @@ $border-color: #5b6bbf;
     margin-left: 196px;
 
     &__text-input {
+
         padding-left: 31px;
         font-size: 20px;
         border: 2px solid white;
@@ -48,19 +50,19 @@ $border-color: #5b6bbf;
         border: 2px solid $border-color;
     }
     &__lname {
-        margin-top: 29px;
+        margin-top: $top-margin;
     }
 
     &__email {
-        margin-top: 29px;
+        margin-top: $top-margin;
     }
 
     &__phone {
-        margin-top: 29px;
+        margin-top: $top-margin;
     }
 
     &__dob {
-        margin-top: 29px;
+        margin-top: $top-margin;
         &_input {
             background-image: url(./images/dob_icon.png);
             background-repeat: no-repeat;
@@ -69,7 +71,7 @@ $border-color: #5b6bbf;
     }
 
     &__sex {
-        margin-top: 29px;
+        margin-top: $top-margin;
         &_input {
             padding-left: 31px;
             margin-top: 20px;
@@ -144,6 +146,13 @@ $border-color: #5b6bbf;
             max-width:688px;
         }
     }
+
+    .profile-form {
+        margin-left: 100px;
+    }
+    .button-submit {
+        margin-left: 132px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -160,6 +169,18 @@ $border-color: #5b6bbf;
             font-family: "Lato-Regular";
             max-width:217px;
         }
-        
+    }
+    .profile-form {
+        margin-left: 0;
+        &__text-input {
+        padding-left: 31px;
+        font-size: 20px;
+        width: 200px;
+        height: 56px;
+    }
+    }
+    .button-submit {
+        margin-left: 50px;
+        margin-top: 30px;
     }
 }
