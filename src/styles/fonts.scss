@@ -1,15 +1,19 @@
 @font-face {
     font-family: Lato-Bold; /* Имя шрифта */
     src: url(./fonts/Lato-Bold.ttf); /* Путь к файлу со шрифтом */
- }
- @font-face {
+}
+@font-face {
     font-family: Lato-BoldItalic; /* Имя шрифта */
     src: url(./fonts/Lato-BoldItalic.ttf); /* Путь к файлу со шрифтом */
- }
- @font-face {
+}
+@font-face {
     font-family: Lato-Regular; /* Имя шрифта */
     src: url(./fonts/Lato-Regular.ttf); /* Путь к файлу со шрифтом */
- }
+}
+@font-face {
+    font-family: Lato-Italic; /* Имя шрифта */
+    src: url(./fonts/Lato-Italic.ttf); /* Путь к файлу со шрифтом */
+}
 
 h2 {
 	margin: none;

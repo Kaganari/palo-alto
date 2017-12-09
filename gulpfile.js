@@ -18,6 +18,7 @@ var path = {
     images: 'src/images/**/*.+(png|jpg|ico)',
     dist: {
       css:  'dist/',
+      css_for_dev:  'dist/in_dev',
       html: 'dist/',
       fonts: 'dist/fonts',
       images: 'dist/images'
@@ -33,10 +34,12 @@ gulp.task('default', ['build', 'serve', 'watch']);
 
 gulp.task('css', function () {
   return gulp.src(path.css)
-    .pipe(sass().on('error', sass.logError))
     .pipe(sourcemaps.init())
+    .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest(path.dist.css_for_dev))
+    .pipe(cssmin())
     .pipe(gulp.dest(path.dist.css));
 });
 
