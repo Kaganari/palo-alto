@@ -1,16 +1,6 @@
 # palo-alto
 
 Simple front-end application.
-You should have installed next packages:
-gulp
-gulp-rename
-gulp-compile-handlebars
-gulp-cssmin
-gulp-sourcemaps'
-gulp-autoprefixer
-gulp-sass
-browser-sync
-Otherwise it's probably won't work.
 
 How to run this project:
 
