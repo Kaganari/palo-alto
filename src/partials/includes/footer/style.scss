@@ -155,6 +155,32 @@ $footer__menu_color: white;
             line-height: 23px;
             text-align: center;
             margin: auto;
+            margin-top: 20px;
+            &_developers {
+                display: block;
+
+                color: $footer__menu_color;
+            }
+
+        }
+        
+        &__social {
+            margin-top: 49px;
+        }
+    }
+    .menu_footer {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .footer {
+        margin-top: 54px;
+        &__copyright {
+            max-width: 242px;
+            line-height: 23px;
+            text-align: center;
+            margin: auto;
             margin-top: 62px;
             &_developers {
                 display: block;

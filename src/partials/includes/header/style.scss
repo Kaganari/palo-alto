@@ -81,6 +81,15 @@
 
 @media screen and (max-width: 767px) {
     .header {
+        max-width: 440px;
+        margin-top: 38px;
+        margin-bottom: 48px;
+    }
+
+}
+
+@media screen and (max-width: 479px) {
+    .header {
         max-width: 276px;
         margin-top: 38px;
     }

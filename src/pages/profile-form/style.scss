@@ -158,6 +158,37 @@ $top-margin: 15px;
 
 @media screen and (max-width: 767px) {
     .divider {
+        margin: 20px 0 20px 0;
+    }
+    .tile {
+        max-width: 480px;
+        padding: 39px 27px 26px 25px;
+        margin-bottom: 20px;
+        &__title {
+            font-size: 26px;
+            line-height: 32px;
+            font-family: "Lato-Regular";
+            max-width:430px;
+        }
+    }
+    .profile-form {
+        margin-left: 50px;
+        &__text-input {
+        padding-left: 31px;
+        font-size: 20px;
+        width: 300px;
+        height: 56px;
+        }
+    }
+    .button-submit {
+        margin-left: 50px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .divider {
         margin: 39px 0 39px 0;
     }
     .tile {
