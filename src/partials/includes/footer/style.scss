@@ -4,7 +4,7 @@ $footer__menu_color: white;
     margin-top: 105px;
     padding-top: 65px;
     background-color: #5b6bbf;
-
+    text-align: center;
     &__Palo-Alto {
 
         text-align: center;
@@ -26,50 +26,6 @@ $footer__menu_color: white;
 
     }
 
-    &__menu {
-        margin-top:  62px;
-        text-align: center;
-
-        &_home {
-            font-size: 17px;
-            color: rgb(189,189,189);
-            font-family: "Lato-Bold";
-            font-weight: 700;
-            text-align: right;
-            line-height: 25px;
-            
-            &:link {
-            color: $footer__menu_color;
-            text-decoration: none;
-            }
-            &:visited {
-            color: $footer__menu_color;
-            }
-        }
-        &_profile {
-            font-size: 16px;
-            font-family: "Lato-Bold";
-            font-weight: 700;
-            text-align: right;
-            padding-left: 42px;
-            line-height: 25px;
-
-            &:link {
-            color: $footer__menu_color;
-            text-decoration: none;
-            }
-            &:visited {
-                color: $footer__menu_color;
-            }
-        }
-        &_search {
-            padding-left: 58px;
-            width: 15px;
-            height: 15px;
-            vertical-align: middle;
-            background: url("images/search_white.png") no-repeat right center;
-        }
-    }
     &__social {
         text-align: center;
         margin-top: 37px;
@@ -111,13 +67,46 @@ $footer__menu_color: white;
 }
 
 
-@media only screen and (min-device-pixel-ratio: 1.5) {
-    .footer {
-        &__menu {
-            &_search {
-                background-image: url("images/search_white@2x.png");
-            }
+.menu_footer {
+    margin-top: 62px;
+    float: none;
+    &__home {
+        font-size: 17px;
+        line-height: 25px;
+        &:link {
+            color: $footer__menu_color;
         }
+        &:visited {
+            color: $footer__menu_color;
+        }
+    }
+    &__profile {
+        margin-left: 42px;
+        line-height: 25px;
+        &:link {
+            color: $footer__menu_color;
+        }
+        &:visited {
+            color: $footer__menu_color;
+        }
+    }
+    &__search {
+        margin-left: 58px;
+        width: 16px;
+        height: 16px;
+        background: url("images/search_white.png") no-repeat right center;
+    }
+}
+
+
+@media only screen and (min-device-pixel-ratio: 1.5) {
+
+    .menu_footer {
+        &__search {
+            background-image: url("images/search_white@2x.png");
+        }
+    }
+    .footer {
         &__icon {
             &_facebook {
                 background-image: url("images/social@2x.png");
@@ -147,13 +136,14 @@ $footer__menu_color: white;
             margin-top: 40px;
 
         }
-        &__menu {
-            margin-top: 38px;
-        }
         
         &__social {
             padding-bottom: 40px;
         }
+    }
+
+    .menu_footer {
+        margin-top: 38px;
     }
 }
 
@@ -173,29 +163,31 @@ $footer__menu_color: white;
             }
 
         }
-        &__menu {
-            &_home {
-                display: block;
-                font-size: 16px;
-                text-align: center;
-            }
-            &_profile {
-                display: block;
-                font-size: 16px;
-                text-align: center;
-                margin-top: 23px;
-                padding: 0;
-            }
-            &_search {
-                display: block;
-                width: 0;
-                height: 0;
-                background:none;
-            }
-        }
         
         &__social {
             margin-top: 49px;
+        }
+    }
+
+    .menu_footer {
+        &__home {
+            display: block;
+            font-size: 16px;
+            text-align: center;
+        }
+        &__profile {
+            display: block;
+            font-size: 16px;
+            text-align: center;
+            margin-top: 23px;
+            padding: 0;
+            margin-left: 0;
+        }
+        &__search {
+            display: block;
+            width: 0;
+            height: 0;
+            background:none;
         }
     }
 }
