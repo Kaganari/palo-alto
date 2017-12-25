@@ -1,0 +1,25 @@
+<div class="tile">
+    {{#if image}}
+        <img srcset="{{image}}" class="tile__image">
+    {{/if}}
+    <div class="tile__label ">{{label}}</div>        
+    <h2 class="tile__title">
+        <div class="tile__date">{{date}}</div>
+        <div>{{headline}}</div>
+    </h2>
+    <div class="divider"></div>
+    <div class="post-content">
+        {{#if quote}}
+            <div class="post-content__quote">{{quote}}</div>
+        {{/if}}
+        {{#each paragraphs}}
+            <div>{{this}}</div>
+        {{/each}}
+    </div>
+    <div class="post-content__footer">
+        <button type="button" name="read-more" class="button-read-more"><span class="button-read-more__text">READ MORE</span></button>
+        {{#each tags}}
+            <a href="" class="post-content__footer_tag">{{this}}</a>
+        {{/each}}
+    </div>
+</div>

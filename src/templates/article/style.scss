@@ -6,3 +6,12 @@
     background-color: #ffffff;
     border: 1px;
 }
+
+.post-content {
+    &__quote {
+        font-size: 25px;
+        font-family: "Lato-Italic";
+        color: rgba(0, 0, 0, 0.5);
+        line-height: 38px;
+    }
+}

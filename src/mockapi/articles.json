@@ -1,0 +1,35 @@
+{
+  "articles":
+  [
+    {
+      "image": "",
+      "label":"I Do Travel",
+      "date": "Sep 20",
+      "headline": "No difference how many peaks you reach if there was no pleasure in the climb.",
+      "paragraphs": [
+        "Quisque congue lacus mattis massa luctus, nec hendrerit purus aliquet. Ut ac elementum urna. Pellentesque suscipit metus et egestas congue. Duis eu pellentesque turpis, ut maximus metus. Sed ultrices tellus vitae rutrum congue. Fusce luctus augue id nisl suscipit, vel sollicitudin orci egestas. Morbi posuere venenatis ipsum, ac vestibulum quam dignissim efficitur. Ut vitae rutrum augue, in volutpat quam. Cras a viverra ipsum. Aenean ut consequat ex, vitae vulputate nunc. Vestibulum metus nisi, aliquam sed tincidunt sit amet, pretium et augue."
+      ],
+      "tags": [
+        "Explorer",
+        "Peak",
+        "Yosemite"
+      ]
+    },
+    {
+      "image": "images/mountain.png",
+      "label":"I Do Observe",
+      "date": "Sep 18",
+      "headline": "You know, I'd rather argue with you, then laugh with anyone else.",
+      "quote": "Curabitur luctus placerat lorem id eleifend. Nulla ac lacus finibus, tempor velit hendrerit, vulputate lacus. Nunc fermentum nunc sem, ac eleifend tellus cursus nec. Donec a euismod est, vitae accumsan purus. Proin aliquet ex massa, ac finibus magna commodo vitae.",
+      "paragraphs": [
+        "Quisque congue lacus mattis massa luctus, nec hendrerit purus aliquet. Ut ac elementum urna. Pellentesque suscipit metus et egestas congue. Duis eu pellentesque turpis, ut maximus metus. Sed ultrices tellus vitae rutrum congue. Fusce luctus augue id nisl suscipit, vel sollicitudin orci egestas. Morbi posuere venenatis ipsum, ac vestibulum quam dignissim efficitur. Ut vitae rutrum augue, in volutpat quam. Cras a viverra ipsum. Aenean ut consequat ex, vitae vulputate nunc. Vestibulum metus nisi, aliquam sed tincidunt sit amet, pretium et augue.",
+        "Sed sagittis commodo dolor. Vivamus elementum sem sed sapien bibendum viverra. Curabitur semper scelerisque turpis eu ullamcorper. Morbi tincidunt auctor orci id consequat. Nulla odio mi, iaculis id congue quis, euismod id nisi. In varius congue diam, et viverra lorem bibendum ut."
+      ],
+      "tags": [
+        "Photo",
+        "Peak",
+        "Yosemite"
+      ]
+    }
+  ]
+}
