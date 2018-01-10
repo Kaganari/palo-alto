@@ -95,8 +95,14 @@
     }
 
     .menu {
-        display: block;
-        float: left;
-        margin-bottom: 63px;
+        display: none;
+        &__burger {
+            display: inline-block;
+            background-image: url("images/burger.png");
+            width: 32px;
+            height: 26px;
+            float: right;
+            margin-top: 12px;
+        }
     }
 }

@@ -1,0 +1,64 @@
+.sidebar {
+    width: 240px;
+    background-color: rgb(32,39,76);
+    height: 100vh;
+    position: fixed;
+    right: -240px;
+    top: 0px;
+    &__menu {
+        margin-top: 0;
+        display: block;
+        &_search-input {
+            width: 110px;
+            background-color: rgb(32,39,76);
+            outline: none;
+            border: none;
+            color: white;
+            font-family: "Lato-Light";
+            font-size: 16px;
+            font-weight: 300;
+        }
+        &_search-input:focus {
+        border: none;
+        }
+        &_search {
+            background-image: url("images/search_white.png");
+        }
+        &_divider {
+            background-color: rgba(255,255,255,0.1);
+            margin: 0;
+            width: 240px;
+            height: 1px;
+        }
+        &_links {
+            margin-left: 40px;
+            margin-top: 41px;
+            display: block;
+            text-align: left;
+            color: white;
+            &:link {
+                color: white;
+                text-decoration: none;
+            }
+            &:visited {
+                color: white;
+            }
+        }
+    }
+    &__logo {
+        margin-left: 40px;
+        position: absolute;
+        bottom: 89px;
+        font-family: Lato-BoldItalic;
+        font-size: 21px;
+        color: white;
+    }
+    &__developers{
+        margin-left: 40px;
+        position: absolute;
+        bottom: 40px;
+        font-family: Lato-Reglar;
+        font-size: 13px;
+        color: rgba(255,255,255,0.4);
+    }
+}

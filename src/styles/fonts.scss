@@ -14,7 +14,7 @@
     font-family: Lato-Italic; /* Имя шрифта */
     src: url(./fonts/Lato-Italic.ttf); /* Путь к файлу со шрифтом */
 }
-
-h2 {
-	margin: none;
+@font-face {
+    font-family: Lato-Light; /* Имя шрифта */
+    src: url(./fonts/Lato-Light.ttf); /* Путь к файлу со шрифтом */
 }

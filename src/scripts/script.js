@@ -13,4 +13,18 @@ $(document).ready(function() {
             }
         }
     });
+    $(".menu__burger").click(function(){
+        $("body").css("position","fixed");
+        $("body").css("top","0");
+        $("body").css("left","0");
+        $(".sidebar").animate({right:"0"},400);
+        $("body").animate({left:"-220px"},400);
+        $(".cover").animate({right:"240"},400);        
+    });
+    $(".cover").click(function(){
+        $(".sidebar").animate({right:"-240px"},400);
+        $("body").animate({left:"0"},400);
+        $(".cover").animate({right:"-240px"},400);
+        $("body").css("position","relative");
+    });
 });
